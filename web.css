@@ -10,8 +10,8 @@
 
 /* COLORS */
 :root{
-    --first-color: #17d5ee;
-    --second-color: #537219;
+    --first-color: #1484cf;
+    --second-color: #0e2431;
 }
 
 /* Font And Typo */
@@ -190,7 +190,7 @@ img {
 
 .home_title {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  margin-bottom: var(--mb-5) !important;
 }
 .home_title-color {
   color: var(--first-color);
@@ -320,7 +320,7 @@ width: 85%;
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid --second-color;
+  border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -341,19 +341,21 @@ width: 85%;
   padding: 2rem 0;
 }
 
-.foooter_title {
-  font-size: 2rem;
+.footer_title {
+  font-size: 4rem;
   margin-bottom: var(--mb-4);
+  /* justify-content: space-between; */
+  
 }
 
 .footer_social {
   margin-bottom: var(--mb-4);
 }
  .footer_icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
   margin: 0 --mb-2;
-  justify-content: space-between;
+  
  }
  /*============ Media Queries ============*/
  @media screen and (min-width:768px) {
@@ -369,7 +371,7 @@ width: 85%;
   }
   .section_title::after {
     width: 80px;
-    top: 3rerm;
+    top: 3rem;
   }
   .nav {
     height: calc(var(--header-height) + 1rem);
@@ -408,7 +410,7 @@ width: 85%;
     width: 475px;
     bottom: 15%;
   }
-.about_container
+.about_container,
 .skills_container {
    grid-template-columns: repeat(2, 1fr);
    align-items: center;
